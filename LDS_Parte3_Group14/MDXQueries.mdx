@@ -1,0 +1,39 @@
+-- q1 Show the player that lost the most matches for each country.
+
+with member rnk as 
+rank(([Loser].[Country].currentmember,[Loser].[ContinetCountryIDPlayer].currentmember),
+([Loser].[Country].currentmember,[Loser].[ContinetCountryIDPlayer].[Id Player] ),
+[Measures].[n_match]) 
+
+select [Measures].[n_match] on columns,
+nonempty(filter(([Loser].[Country].[Country],[Loser].[ContinetCountryIDPlayer].[Id Player]), rnk = 1)) on rows
+from [Group 14 DB_Parte3]
+
+-- q2 For each tournament, show the loser with the lowest total loser rank points
+
+SELECT [Measures].[Loser Rank Points] ON COLUMNS,
+GENERATE(([Tourney].[Tourney Id].[Tourney Id], [Tourney].[Year].[Year]),
+BOTTOMCOUNT(([Tourney].[Tourney Id].CURRENTMEMBER, [Tourney].[Year].CURRENTMEMBER,
+nonempty([Loser].[Id Player].[Id Player])), 
+1,
+[Measures].[Loser Rank Points])) ON ROWS
+FROM [Group 14 DB_Parte3]
+
+-- q3 For each tournament, show the loser with the highest ratio between his loser rank
+-- points and the average winner rank points of that tournament
+
+with member AVG_Winner_rank_points as  
+(([Tourney].[Tourney Id].CURRENTMEMBER, [Loser].[Id Player].[All]),  [Measures].[Winner Rank Points]) / 
+(([Tourney].[Tourney Id].CURRENTMEMBER, [Loser].[Id Player].[All]), [Measures].[n_match] )
+
+member Loser_Rank_Points as 
+([Tourney].[Tourney Id].CURRENTMEMBER, [Measures].[Loser Rank Points])
+
+member Ratio as 
+Loser_Rank_Points / AVG_Winner_rank_points
+
+select { AVG_Winner_rank_points, Loser_Rank_Points, Ratio}  on columns,
+GENERATE([Tourney].[Tourney Id].[Tourney Id],  
+TOPCOUNT(([Tourney].[Tourney Id].CURRENTMEMBER,[Tourney].[Year].[Year], [Loser].[Id Player].[Id Player]), 1, Ratio )) on rows 
+from [Group 14 DB_Parte3]
+

@@ -1,0 +1,29 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>Group 14 DB_Parte3Real</Id>
+            <Name>Group 14 DB_Parte3Real</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4rUlFsevekS9+Zo0TdfqCAAAAAAuAAAARwByAG8AdQBwACAAMQA0ACAARABCAF8AUABhAHIAdABlADMAUgBlAGEAbAAAABBmAAAAAQAAIAAAADmRAEjZMY5MjeeycHmEo9Fvc5rEvgvDsAT7mN7vePlBAAAAAA6AAAAAAgAAIAAAAPbwOVCx/J+MuzXk573lxBp58vbkwe/00eWUSpSMWgBUIAAAAM/ubnqDI5s6uuyGpz5Y2PjdY4y53g2Csm88gVwOGr9lQAAAAC/y/I/jU1RsnJOTrJGlsww/KcjhGpHrGH8W0pobSkdkMDfGKa7qFWHNPnsyMf4FHEKeh3rbaYOy1iur8c6vEyM=</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>Group 14 DB_Parte3Real</Id>
+            <Name>Group 14 DB_Parte3Real</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4rUlFsevekS9+Zo0TdfqCAAAAAAuAAAARwByAG8AdQBwACAAMQA0ACAARABCAF8AUABhAHIAdABlADMAUgBlAGEAbAAAABBmAAAAAQAAIAAAAFFmR7kJfWp+wcpR7BoZoCt2XMnIu7xRAGVszGK/sXUIAAAAAA6AAAAAAgAAIAAAAJd+G7fCtgv+IPRWXhLK947SOz50v14k88iOkL+sO1MaIAAAABLQ+553wPyop2KOnZaajspPoKELblun5QlsdJ2W0/KeQAAAAKeb9WZFfDuEK5xLZ4nOTbLfx9yiOAxKuptkEg/yRNodXisYGPn8EwzAxy+ZQCQNHjd++mRkcScGorkp7Jg0bAg=</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>http://lds.di.unipi.it/olap/msmdpump.dll</TargetServer>
+        <TargetDatabase>Gruppo14_Task3_real</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>

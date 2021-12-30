@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Gruppo14_Task3_real", "Gruppo14_Task3_real\Gruppo14_Task3_real.dwproj", "{DD336B34-534D-4DFA-BBAC-F71C8E6E3206}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD336B34-534D-4DFA-BBAC-F71C8E6E3206}.Development|Default.ActiveCfg = Development
+		{DD336B34-534D-4DFA-BBAC-F71C8E6E3206}.Development|Default.Build.0 = Development
+		{DD336B34-534D-4DFA-BBAC-F71C8E6E3206}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {22E9B9DB-0827-4506-A0C5-88FBBEB604A8}
+	EndGlobalSection
+EndGlobal
